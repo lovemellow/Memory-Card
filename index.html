@@ -21,6 +21,11 @@
         </button>
     </h1>
 
+    <div id="cards-container" class="cards">
+
+    </div>
+
+
 
     <div class="navigation">
         <button id="nav-left" class="btn">
@@ -43,30 +48,33 @@
     </h1>
 
 
-    <div id="card-Container" class="cards"></div>
 
+    <div id="add-Container" class="add-Container">
 
-
-    <div id="add-Container" class="add-Card-Container">
-        <h1>New Card</h1>
-        <button id="hide" class="btn btn-close">
-            <i class="fas fa-times"></i>
-        </button>
+        <h1>New Card
+            <button id="hide" class="btn btn-close">
+                <i class="fas fa-times"></i>
+            </button></h1>
 
         <h2>Card Number</h2>
-        <input type="text" class="moveNumber" onKeyup="inputMoveNum(this)" maxlength="4"> -
-        <input type="text" class="moveNumber" onKeyup="inputMoveNum(this)" maxlength="4"> -
-        <input type="password" class="moveNumber" onKeyup="inputMoveNum(this)" maxlength="4"> -
-        <input type="password" class="moveNumber" onKeyup="inputMoveNum(this)" maxlength="4">
+        <div class="form">
+            <input type="text" id="cardNum" class="moveNumber" maxlength="4"> -
+            <input type="text" id="cardNum" class="moveNumber" maxlength="4"> -
+            <input type="password" id="cardNum" class="moveNumber" maxlength="4"> -
+            <input type="password" id="cardNum" class="moveNumber" maxlength="4">
+        </div>
 
         <h2>Validity</h2>
-        <input type="text" class="validNumber" maxlength="2" placeholder="MM"> /
-        <input type="text" class="validNumber" maxlength="2" placeholder="YY">
-
+        <div class="add-form">
+            <input type="text" id="cardVali" class="validNumber" maxlength="2" placeholder="MM"> /
+            <input type="text" id="cardVali" class="validNumber" maxlength="2" placeholder="YY">
+        </div>
         <h2>password</h2>
-        <input type="password" maxlength="4">
+        <div class="add-form">
+            <input type="password" id="cardPwd" maxlength="4">
+        </div>
 
-        <button id="btn-addCard" class="btn">
+        <button id="btn-addCard" class="btn add-btn">
             <i class="fas fa-plus"></i>
             add card
         </button>
@@ -75,7 +83,7 @@
     </div>
 
 
-    <script src="script.jsp"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
