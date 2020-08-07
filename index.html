@@ -14,17 +14,37 @@
 
     <h1>Memory Card</h1>
 
-    <h1>
-        <button id="show" class="btn btn-addNewCard">
+
+
+<!--카드 추가/ 카드 삭제 버튼-->
+
+
+<div class="createBtn">
+    
+        <button id="show" class="btnC btn-addNewCard">
             <i class="fas fa-plus"></i>
             add new card
+        </button>        
+
+
+        <button id="btn-remove" class="btnC">
+            <i class="fas fa-trash-alt"></i>
+            remove card
         </button>
-    </h1>
 
-    <div id="cards-container" class="cards">
+</div>
 
-    </div>
 
+<!--카드 보여지는 곳-->
+
+
+    <div id="cards-container" class="cards"></div>
+
+
+
+
+
+<!--카드정보 입력 후 기억하고 있는 카드수 확인 및 카드전환-->
 
 
     <div class="navigation">
@@ -32,7 +52,7 @@
             <i class="fas fa-arrow-left"></i>
         </button>
 
-        <p id="current"></p>
+        <p id="current">1/1</p>
 
         <button id="nav-right" class="btn">
             <i class="fas fa-arrow-right"></i>
@@ -40,14 +60,11 @@
     </div>
 
 
-    <h1>
-        <button id="btn-remove" class="btn">
-            <i class="fas fa-trash-alt"></i>
-            remove card
-        </button>
-    </h1>
 
 
+
+
+<!--add new card 클릭시 카드 정보 작성할수 있는 폼으로 화면전환-->
 
     <div id="add-Container" class="add-Container">
 
@@ -66,7 +83,7 @@
 
         <h2>Validity</h2>
         <div class="add-form">
-            <input type="text" id="cardVali" class="validNumber" maxlength="2" placeholder="MM"> /
+            <input type="text" id="cardVali" class="validNumber" maxlength="2" placeholder="MM"> / 
             <input type="text" id="cardVali" class="validNumber" maxlength="2" placeholder="YY">
         </div>
         <h2>password</h2>
@@ -74,13 +91,14 @@
             <input type="password" id="cardPwd" maxlength="4">
         </div>
 
-        <button id="btn-addCard" class="btn add-btn">
+        <button id="btn-addCard" class="btnC add-btn">
             <i class="fas fa-plus"></i>
             add card
         </button>
 
 
     </div>
+
 
 
     <script src="script.js"></script>

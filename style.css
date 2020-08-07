@@ -102,9 +102,16 @@ body {
 
 h1 {
     position: relative;
+    margin-bottom: 30px;
   }
 
-.btn {
+
+.createBtn button{
+  margin: 0 40px 20px 40px;
+}
+
+
+.btnC {
     display: inline-block;
     font-family: 'Nanum Gothic', sans-serif;
     background-color: #fff;
@@ -114,6 +121,8 @@ h1 {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 
 .btn i {
     margin-right: 2px;
@@ -126,9 +135,18 @@ h1 {
     margin-left: 10px;
 }
 
+.btn-close {
+  text-decoration: none;
+}
+
+
+
+
+
+
 input {
-    width: 50px;
-    height: 25px;
+    width: 60px;
+    height: 30px;
     text-align: center;
 }
 
@@ -137,16 +155,33 @@ input::placeholder {
 }
 
 
+
+
+
+
 .navigation {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: 20px 0;
   }
 
   .navigation p {
-    margin: 0 25px;
+    font-size: 18px;
+    margin: 0 45px 0 50px;
+  }
+
+
+  .navigation button {
+    font-size: 14px;
+    background-color: unset;
   }
 
   
+
+
+
+
 .add-Container {
   opacity: 0;
   z-index: -1;
@@ -156,7 +191,7 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 100px 0;
   position: absolute;
   top: 0;
   bottom: 0;

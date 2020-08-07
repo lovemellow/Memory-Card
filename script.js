@@ -15,7 +15,7 @@ const cardsContainer = document.getElementById('cards-container'),
 
 // Keep track of current card
 let currentActiveCard = 0;
-
+ 
 // Store DOM cards
 const cardsEl = [];
 
@@ -135,7 +135,6 @@ function showingAdd() {
     //hide add Container
     hideBtn.addEventListener('click', () =>
         cardAddContainer.classList.remove('show'));
-    //}
 }
 
 
@@ -167,7 +166,7 @@ function addNewCard() {
 function clearCard() {
     clearBtn.addEventListener('click', () => {
         localStorage.clear();
-        cardContainer.innerHTML = '';
+        cardsContainer.innerHTML = '';
         window.location.reload();
     });
 }
